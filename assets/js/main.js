@@ -11,6 +11,7 @@ const moviesContainer = document.querySelector('#movies-container');
 const moviesSearchable = document.querySelector('#movies-searchable');
 
 function createComment(commentDoc, id) {
+    
     var div = document.createElement('div');
     var texSpan = div.appendChild(document.createElement(`span`));
     texSpan.className = "spanComment";
@@ -72,6 +73,7 @@ window.onload = function () {
             $('#loginDiv').style.display = 'none';
             $('#signupDiv').style.display = 'none';
             $('.container').style.display = 'visible';
+            forEachComment(createComment);
         } else {
             //user just logged out
             $('#comments').style.visibility = 'collapse';
@@ -82,7 +84,7 @@ window.onload = function () {
     });
 
     // show comments
-    forEachComment(createComment);
+    
 
 
     $('#loginLink').onclick = function () {
