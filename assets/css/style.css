@@ -1,0 +1,422 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border:0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+h1 img{
+    text-align: center;
+height: 80pt;
+
+/* text-align: center;
+height: 80pt;
+position: absolute;
+right: 3%; */
+
+}
+
+#h2{
+    color: cornsilk;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-image:
+  linear-gradient(to bottom, rgb(8, 8, 8), rgba(0, 0, 248, 0.562));
+  /* background-image: url(background-movie.jpg); */
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.movie {
+    margin-top: 50px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    transition: 250ms all;
+}
+
+section .imageContainer {
+    flex: 0 0 auto;
+    border-radius: 5;
+}
+
+.content {
+    display: none;
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    border: 1px solid rgb(172, 27, 27);
+    padding: 20px;
+    border-radius: 5pt;
+   
+
+}
+
+
+.content-display {
+    display: grid;
+    background-image: url(background-movie.jpg)  
+}
+
+.content-display {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content div {
+    margin: 10px;
+}
+
+#lowercomment{
+    text-align: center;
+    background-image: radial-gradient(rgb(188, 176, 218),rgba(0, 0, 248, 0.562));
+    border-style: fading;
+}
+
+#addCommentBtn{
+    vertical-align: 20px;
+    background-image: 
+    linear-gradient(to bottom, rgb(228, 187, 125), rgba(221, 48, 192, 0.562));
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#addCommentBtn:hover {
+	background:linear-gradient(to bottom, #55b0c0 25%, #33ac5c 70%);
+	background-color:#408c99;
+}
+#addCommentBtn:active {
+	position:relative;
+	top:1px;
+}
+
+h3{
+    color:rgb(233, 168, 213);
+    text-shadow: darkgreen;
+    position: absolute;
+    margin-left: 0%;
+}
+
+#content-close {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #FF144C;
+    text-decoration: underline solid rgb(33, 202, 224);
+    font-style: italic;
+font-variant: small-caps;
+font-weight: 1000;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+     width: 35px;
+    border: 0px solid rgb(216, 25, 25);
+    border-radius: 45%;
+    left: 20px;
+    
+    
+-webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+background: #ECEFCF;
+
+}
+
+body#tinymce {
+background: #FFFFFF
+    
+}
+
+h1{
+    text-align: center;
+    text-shadow: lightcoral;
+
+}
+
+.imageContainer {
+    transition: 250ms all;
+    width: 190px;
+}
+
+.imageContainer:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imageContainer {
+    border-radius: 16px;
+    box-shadow: 2px 2px 6px 0px rgba(30, 170, 195, 0.3);
+    cursor: pointer;
+    margin: 10px 20px 10px 20px;
+    
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 13px;
+}
+
+.btn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 760px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+#loginLink{
+    color: blue;
+    cursor: pointer;
+    text-align: center;
+    height: 2em;
+    width: 5em;
+    
+    border-radius: 1em;
+    
+    font-size: 1em;
+    color: #333;
+    
+    /* padding defines the width of the red gradient background (2) */
+    padding: .25em;
+  
+    /* border-width defines the width the blue gradient background (3) */
+    border: .25em solid transparent;
+  
+    background: 
+      /* (1) most inner gradient */
+      linear-gradient(to bottom, rgb(151, 228, 238), rgb(224, 226, 74)) content-box,
+      /* (2) red gradient */
+      linear-gradient(to right, #e94332, #db67e6) padding-box,
+      /* (3) blue gradient */
+      linear-gradient(to right, #d1dfe9, #3d0ee6) border-box;
+      margin-left: 50em;
+}
+
+#loginLink:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #7552bf 100%);
+	background-color:#408c99;
+}
+
+#loginLink:active {
+	position:relative;
+	top:1px;
+}
+
+#signupLink{
+    color: blue;
+    cursor: pointer;
+    text-align: center;
+    height: 2em;
+    width: 5em;
+    
+    border-radius: 1em;
+    
+    font-size: 1em;
+    color: #333;
+    
+    /* padding defines the width of the red gradient background (2) */
+    padding: .25em;
+  
+    /* border-width defines the width the blue gradient background (3) */
+    border: .25em solid transparent;
+  
+    background: 
+      /* (1) most inner gradient */
+      linear-gradient(to bottom, rgb(151, 228, 238), rgb(224, 226, 74)) content-box,
+      /* (2) red gradient */
+      linear-gradient(to right, #e94332, #db67e6) padding-box,
+      /* (3) blue gradient */
+      linear-gradient(to right, #d1dfe9, #3d0ee6) border-box;
+      margin-left: 50em;
+}
+
+#signupLink:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #7552bf 100%);
+	background-color:#408c99;
+}
+#signupLink:active {
+	position:relative;
+	top:1px;
+}
+
+#loginBtn{
+    cursor: pointer;
+    box-shadow: -10px 12px 20px -6px #1ce1e8;
+	background:linear-gradient(to bottom, #7552bf 5%, #408c99 100%);
+	background-color:#7552bf;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font: size 15px;
+	padding:4px 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2db6e3;
+    margin-right: 15px;
+}
+
+#loginBtn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #7552bf 100%);
+	background-color:#408c99;
+}
+#loginBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#registerBtn{
+    cursor: pointer;
+    box-shadow: -10px 12px 20px -6px #1ce1e8;
+	background:linear-gradient(to bottom, #e9a7e0 85%, #b5e0ab 50%);
+	background-color:#7552bf;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font: size 15px;
+	padding:4px 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2db6e3;
+    margin-right: 15px;
+}
+
+#registerBtn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #7552bf 100%);
+	background-color:#408c99;
+}
+#registerBtn:active {
+	position:relative;
+	top:1px;
+}
+
+#out{
+    cursor: pointer;
+    color: rgb(201, 19, 19);
+    text-align: center;
+  height: 2em;
+  width: 5em;
+  
+  border-radius: 1em;
+  
+  font-size: 1em;
+  color: #333;
+  
+  /* padding defines the width of the red gradient background (2) */
+  padding: .25em;
+
+  /* border-width defines the width the blue gradient background (3) */
+  border: .25em solid transparent;
+
+  background: 
+    /* (1) most inner gradient */
+    linear-gradient(to bottom, #fff, #bbb) content-box,
+    /* (2) red gradient */
+    linear-gradient(to right, #e94332, #a91302) padding-box,
+    /* (3) blue gradient */
+    linear-gradient(to right, #0867a6, #4aa9e8) border-box;
+    margin-left: 50em;
+}
+
+#out:hover {
+	background:linear-gradient(to bottom, #da4950 5%, #525abe 100%);
+	background-color:#408c99;
+}
+#out:active {
+	position:relative;
+	top:1px;
+}
+
+#Trash{
+    text-align: right;
+}
+
+.comment{
+    /* border: solid; */
+border-bottom: solid;
+    border-image: linear-gradient(rgb(8, 8, 8), rgba(0, 0, 248, 0.562)) 30;
+    /* border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E") 1; */
+    margin-top: 14px
+    
+}
+
+.fa-edit:before {
+    content: "\f044";
+    right: 10em;
+    text-align: right;
+    /* padding: revert; */
+    position: absolute;
+    margin-top: -30px;
+}
+
+.fa-trash:before {
+    content: "\f1f8";
+    right: 8em;
+    text-align: right;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.spanComment{
+    margin-top: 10px
+}
+
+h2{
+    color: rgb(248, 216, 35);
+  }
