@@ -1,5 +1,3 @@
-// Initial Values
-const INITIAL_SEARCH_VALUE = 'classic';
 const log = console.log;
 const $ = document.querySelector.bind(document);
 
@@ -148,8 +146,6 @@ function createIframe(video) {
     const videoKey = (video && video.key) || 'No key found!!!';
     const iframe = document.createElement('iframe');
     iframe.src = `http://www.youtube.com/embed/${videoKey}`;
-    // iframe.src = `https://soap2day.ac/embed/${videoKey}`;
-    // iframe.src = `https://soap2day.ac/MczozMjoiMTE5ODh8fDI0Ljg5LjE5MS4xNzh8fDE2Mzg1NTkxNjIiOw.html/${videoKey}`;
     iframe.width = 200;
     iframe.height = 200;
     iframe.allowFullscreen = true;
@@ -254,9 +250,7 @@ searchButton.onclick = function (event) {
 }
 
 function reload() {
-    // reload = window.reload();
     reload = moviesContainer.reload();
-    // reload2 = moviesSearchable.reload();
 }
 
 // Click on any movies
@@ -335,31 +329,11 @@ document.onclick = function (event) {
             $('#loginDiv').style.display = 'block';
             $('#signupDiv').style.display = 'none';
         }
-
-        // forEachComment(createComment);
-
-        // onLogin(user => {
-        //     if (user) {
-        //         //user just logged in
-        //         $('#comments').style.visibility = 'visible';
-        //         $('#addCommentDiv').style.display = 'block';
-        //         $('#loginDiv').style.display = 'none';
-        //         $('#signupDiv').style.display = 'none';
-        //     } else {
-        //         //user just logged out
-        //         $('#comments').style.visibility = 'collapse';
-        //         $('#loginDiv').style.display = 'block';
-        //         $('#addCommentDiv').style.display = 'none';
-        //     }
-        // });
     }
 
 }
 
-
-// Initialize the search
-// searchMovie(INITIAL_SEARCH_VALUE);
 searchUpcomingMovies();
 searchPopularMovie();
 getTrendingMovies();
-// getTopRatedMovies();
+
